@@ -1,0 +1,51 @@
+{% extends "miApp1/padre.html" %}
+
+
+
+{% load static %}
+
+
+
+{% block title %}
+
+This page will show the players 
+
+{% endblock %}
+
+
+
+{% block reseña %}
+
+Enjoy his best plays and numbers during his professional career.
+
+{% endblock %}
+
+
+
+{% block details %} 
+
+Learn a little about the history of your favorite athlete.
+
+
+{% endblock %}
+
+
+
+
+{% block formulario %}
+
+<form action="" method="POST"> {% csrf_token %}
+
+        <table>
+
+            {{form1.as_table}}
+
+
+        </table>
+
+        <input type="submit" value= "Enviar">
+
+
+{% endblock %}
+
+

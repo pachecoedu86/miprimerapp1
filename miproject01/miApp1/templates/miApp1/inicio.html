@@ -1,0 +1,48 @@
+{% extends "miApp1/padre.html" %}
+
+
+
+{% load static %}
+
+
+{% block title %}
+
+Welcome to my website.!
+
+{% endblock %}
+
+
+
+
+{% block reseña %}
+
+    <form action="/miApp1/tofind" method="GET">
+
+    <input type="text" name="sport" id="sport">
+
+    <input type="submit" value="To Find">
+
+    <p> We are looking for sport: {{sport}}</p>
+
+    {% for country in country %}
+    
+    
+            <p>country: {{country.country}} ---- sport: {{country.sport}}</p>
+    
+    
+    {% endfor %}
+       
+    
+        
+    
+
+
+{% endblock %}
+
+
+{% block details %} 
+
+Share the best of all sports with the entire sports community.
+
+
+{% endblock %}

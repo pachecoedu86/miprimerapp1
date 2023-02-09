@@ -1,0 +1,44 @@
+{% extends "miApp1/padre.html" %}
+
+
+
+{% load static %}
+
+
+{% block title %}
+
+This page will show the favorite sport.
+
+{% endblock %}
+
+
+{% block reseña %}
+
+What is your city's favorite team?
+
+{% endblock %}
+
+
+{% block details %} 
+
+Learn details of the story behind your team.
+
+{% endblock %}
+
+
+
+{% block formulario %}
+
+<form action="" method="POST"> {% csrf_token %}
+
+        <table>
+
+            {{form2.as_table}}
+
+
+        </table>
+
+        <input type="submit" value= "Enviar">
+
+
+{% endblock %}

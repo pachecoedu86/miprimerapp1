@@ -1,0 +1,43 @@
+{% extends "miApp1/padre.html" %}
+
+
+
+{% load static %}
+
+
+{% block title %}
+
+This page will show your favorite technical director.
+
+{% endblock %}
+
+
+{% block reseña %}
+
+Know the story behind your preferred technical director.
+
+{% endblock %}
+
+
+{% block details %} 
+
+Meet the most successful technicians in history.
+
+{% endblock %}
+
+
+{% block formulario %}
+
+<form action="" method="POST"> {% csrf_token %}
+
+        <table>
+
+            {{form4.as_table}}
+
+
+        </table>
+
+        <input type="submit" value= "Play Smart..">
+
+
+{% endblock %}

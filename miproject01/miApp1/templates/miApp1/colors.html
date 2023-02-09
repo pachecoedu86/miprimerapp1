@@ -1,0 +1,44 @@
+{% extends "miApp1/padre.html" %}
+
+
+
+{% load static %}
+
+
+{% block title %}
+
+This page will show the favorite colors.
+
+{% endblock %}
+
+
+{% block reseña %}
+
+Meet with us how the colors have changed over the years of your team.
+
+{% endblock %}
+
+
+{% block details %} 
+
+Know the colors of your favorite team.
+
+{% endblock %}
+
+
+
+{% block formulario %}
+
+<form action="" method="POST"> {% csrf_token %}
+
+        <table>
+
+            {{form3.as_table}}
+
+
+        </table>
+
+        <input type="submit" value= "register!">
+
+
+{% endblock %}
